@@ -1,13 +1,15 @@
 import {useState} from "react";
-function BookCreate({onCreate}) {
+import useBooksContext from "../hooks/use-books-context";
+function BookCreate() {
 	const [title, setTitle] = useState('');
+	const { createBook } = useBooksContext()
 	const handleChange = (event) => {
 		setTitle(event.target.value);
 	}
 
 	const addBook = (event) => {
 		event.preventDefault();
-		onCreate(title);
+		createBook(title);
 		setTitle('');
 	}
 

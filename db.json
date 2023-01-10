@@ -1,12 +1,12 @@
 {
   "books": [
     {
-      "title": "First book no?",
+      "title": "First book",
       "id": 1
     },
     {
-      "title": "Manu",
-      "id": 2
+      "title": "Last Book",
+      "id": 3
     }
   ]
 }
